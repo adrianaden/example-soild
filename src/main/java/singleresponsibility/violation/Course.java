@@ -1,8 +1,9 @@
 package singleresponsibility.violation;
 
-public class Student {
+public class Course {
+
     private String name;
-    private String address;
+    private Integer duration;
 
     public String getName() {
         return name;
@@ -12,12 +13,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
+    public Integer getDuration() {
+        return duration;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setDuration(Integer duration) {
+        this.duration = duration;
     }
 
 }
