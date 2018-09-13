@@ -14,7 +14,6 @@ public class Service {
         // delete student
     }
 
-
     public void insertCourse(Course course){
         // insert course
     }

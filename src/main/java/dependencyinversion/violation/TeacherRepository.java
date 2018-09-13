@@ -1,13 +1,14 @@
 package dependencyinversion.violation;
 
 public class TeacherRepository {
-    public void save() {
-        MySqlConnection mySqlConnection = new MySqlConnection();
-        mySqlConnection.insert();
+    private MySqlConnection connection;
+    public TeacherRepository(MySqlConnection connection){
+        this.connection = connection;
     }
-
+    public void save() {
+        connection.insert();
+    }
     public void update() {
-        MySqlConnection mySqlConnection = new MySqlConnection();
-        mySqlConnection.update();
+        connection.update();
     }
 }
